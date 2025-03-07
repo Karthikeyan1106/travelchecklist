@@ -4,17 +4,17 @@ function PackingList({ initialItems, handleButton, handleToggle, handleClearlist
     
     const [sort, setSort] = useState('input');
     let sortedArray = [...initialItems];
-    let sortedItems;
-    // console.log(initialItems)
+    let sor;
+    console.log(sor);
 
 if (sort === 'input') sortedItems = initialItems;
 
     if (sort === 'packed') {
-        sortedItems = sortedArray.sort((a,b)=>a.packed-b.packed)
+        sor = sortedArray.sort((a,b)=>a.packed-b.packed)
     }
 
     if (sort === 'description') {
-        sortedItems = sortedArray.sort((a,b)=>a.description.localeCompare(b.description))
+        sor = sortedArray.sort((a,b)=>a.description.localeCompare(b.description))
     }
 
     
