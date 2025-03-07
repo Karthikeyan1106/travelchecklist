@@ -7,7 +7,7 @@ function PackingList({ initialItems, handleButton, handleToggle, handleClearlist
     let sor;
     console.log(sor);
 
-if (sort === 'input') sortedItems = initialItems;
+if (sort === 'input') sor = initialItems;
 
     if (sort === 'packed') {
         sor = sortedArray.sort((a,b)=>a.packed-b.packed)
